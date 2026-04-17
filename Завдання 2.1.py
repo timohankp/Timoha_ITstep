@@ -8,9 +8,6 @@ class Pet:
         self.energy = 10
         self.alive = True
 
-    def print_hi(self,name):
-        print(f'Hi, {name}!')
-
     def __str__(self):
         return f'name: {self.name}, age: {self.age} '
 
