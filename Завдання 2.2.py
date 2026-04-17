@@ -6,7 +6,7 @@ class Student:
         self.age = age
         self.avg_mark = random.randint(8, 12)
         self.gladness = 50
-        self.prograss = 0
+        self.progress = 0
         self.alive = True
 
     def print_hi(self, name):
@@ -17,7 +17,7 @@ class Student:
 
     def to_study(self):
         print("Time to study")
-        self.prograss += 1
+        self.progress += 1
         self.gladness -= 5
 
     def to_sleep(self):
@@ -27,10 +27,10 @@ class Student:
     def to_chill(self):
         print("Time to chill")
         self.gladness += 5
-        self.prograss -= 0.5
+        self.progress -= 0.5
 
     def end_of_day(self):
-        print(f"Progression: {self.prograss:.2f}")
+        print(f"Progression: {self.progress:.2f}")
         print(f"Gladness: {self.gladness:.2f}")
 
     def live(self,day):
