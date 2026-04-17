@@ -58,13 +58,17 @@ class Student:
         elif self.money <= 0:
             self.to_work()
         else:
-            live_r = random.randint(1, 3)
+            live_r = random.randint(1, 5)
             if live_r == 1:
                 self.to_study()
             elif live_r == 2:
                 self.to_sleep()
             elif live_r == 3:
                 self.to_chill()
+            elif live_r == 4:
+                self.to_work()
+            elif live_r == 5:
+                self.to_go_shopping()
 
         self.end_of_day()
 
