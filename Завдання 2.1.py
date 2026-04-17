@@ -6,7 +6,6 @@ class Pet:
         self.age = age
         self.satiety = 30
         self.energy = 10
-        self.alive = True
 
     def __str__(self):
         return f'name: {self.name}, age: {self.age} '
@@ -45,5 +44,5 @@ class Pet:
         self.end_of_day()
 
 Murchik = Pet("Murchik", 5)
-for day in range(1, 365):
+for day in range(1, 366):
     Murchik.live(day)
