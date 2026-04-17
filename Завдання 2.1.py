@@ -4,6 +4,3 @@ class Pet:
         self.age = age
         self.satiety = 30
         self.sleep = 10
-
-
-    
