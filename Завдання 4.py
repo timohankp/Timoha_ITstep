@@ -31,7 +31,10 @@ class Driver(Person):
 
 driver1 = Driver("Нік", 20, 548, 1)
 driver2 = Driver("Марк", 30, 967, 6)
+driver3 = Driver("Білл", 46, 831, 13)
 
 driver1.show_info()
 print("-----")
 driver2.show_info()
+print("-----")
+driver3.show_info()

@@ -17,8 +17,9 @@ class Cart:
             self.products.remove(product)
 
     def show_products(self):
+        print("Ваша корзина:")
         for product in self.products:
-            print(f"{product.name} - ціна: {product.price}, наявність: {product.availability}")
+            print(f"{product.name} - ціна: {product.price}, {'є в наявності' if product.availability else 'немає в наявності'}")
 
     def total_price(self):
         total = 0
@@ -29,15 +30,20 @@ class Cart:
         return total
 
 
+cart = Cart()
+
 p1 = Product("Телефон", 8000, True)
 p2 = Product("Худі", 2500, True)
 p3 = Product("Лего", 1700, False)
 
-cart = Cart()
-
 cart.add_product(p1)
 cart.add_product(p2)
 cart.add_product(p3)
+
+cart.show_products()
+cart.total_price()
+
+cart.remove_product(p2)
 
 cart.show_products()
 cart.total_price()
