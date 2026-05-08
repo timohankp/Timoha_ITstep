@@ -1,5 +1,5 @@
 import logging
 
-logging.basicConfig(level=logging.INFO, filename="logfile.log", filemode="w")
+logging.basicConfig(level=logging.INFO, filename="logfile.log", filemode="a", format="%(name)s - %(levelname)s - %(message)s - %(asctime)s",   datefmt="%Y-%m-%d")
 
-logging.info(" info message")
+logging.info("info message")
